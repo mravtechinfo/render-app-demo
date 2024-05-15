@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello, World! This is thesecvoid, my first Render Django website.")
+def blog(request):
+    # Render the template 'blog.html'
+    return render(request, 'blog.html')
